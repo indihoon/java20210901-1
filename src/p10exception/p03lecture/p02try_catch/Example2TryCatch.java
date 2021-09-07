@@ -7,6 +7,7 @@ public class Example2TryCatch {
 		String str = "1ㅁㅁㅁㅁㅁㅁ00";
 		
 		try {
+			// exception이 발생하면 try 블럭안의 다음 명령문 실행 안함
 			int n1 = Integer.parseInt(str);
 			System.out.println(n1 * 2);
 		} catch (NumberFormatException e) {
