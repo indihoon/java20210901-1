@@ -11,6 +11,15 @@ public class Example1 {
 	}
 	
 	public static void method1(Object o) {
-		System.out.println(o.hashCode());
+		
+		try {
+			System.out.println(o.hashCode());
+		} catch (NullPointerException e) {
+			System.out.println("널포인터익셉션 발생");
+		}
+		
 	}
 }
+
+
+
