@@ -14,7 +14,7 @@ public class Example3 {
 		Arrays.sort(arr, new Comparator<String>() {
 			@Override
 			public int compare(String o1, String o2) {
-				
+
 				return o2.compareTo(o1);
 			}
 		});
