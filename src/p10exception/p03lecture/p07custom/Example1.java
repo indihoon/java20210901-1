@@ -21,7 +21,7 @@ public class Example1 {
 			}
 		}
 		
-		throw new ImageNotFoundException();
+		throw new ImageNotFoundException(name + "를 찾으려고 했음.");
 	}
 }
 
