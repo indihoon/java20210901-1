@@ -18,3 +18,17 @@ public class Example3 {
 		throw new RuntimeException();
 	}
 }
+
+
+// return : 1.메소드 종료 2.오른쪽 값 반환 -> 실행 이어감
+
+// throw : 예외 객체 throw -> catch한 곳에서 처리 해야함(프로그램종료/실행 계속)
+
+
+
+
+
+
+
+
+
