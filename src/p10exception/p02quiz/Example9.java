@@ -3,6 +3,7 @@ package p10exception.p02quiz;
 import java.io.InputStreamReader;
 
 public class Example9 {
+	// try/catch 안쓰고 컴파일 오류 해결
 	public static void main(String[] args) {
 		method1();
 	}
