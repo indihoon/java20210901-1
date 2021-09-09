@@ -9,7 +9,7 @@ public class Ex05Trim {
 		System.out.print("입력:");
 		String str = scanner.nextLine();
 		
-		System.out.println(str);
+		System.out.println(str.trim());
 		
 		scanner.close();
 	}
