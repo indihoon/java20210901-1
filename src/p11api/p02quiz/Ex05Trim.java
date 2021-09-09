@@ -7,7 +7,7 @@ public class Ex05Trim {
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.print("입력:");
-		String str = scanner.next();
+		String str = scanner.nextLine();
 		
 		System.out.println(str);
 		
