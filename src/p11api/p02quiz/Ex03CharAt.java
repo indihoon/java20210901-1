@@ -1,7 +1,28 @@
 package p11api.p02quiz;
 
+import java.util.Scanner;
+
 public class Ex03CharAt {
 	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		while (true) {
+			System.out.print("입력:");
+			String input = scanner.next();
+			
+			if (input.equals("q")) {
+				break;
+			}
+			
+			int len = input.length();
+			int center = len / 2;
+			
+			System.out.println("가운데 문자는:" + input.charAt(center));
+			System.out.println("가운데 문자는:" + input.charAt(input.length() / 2));
+		}
+		
+		System.out.println("프로그램 종료");
+		scanner.close();
 		
 		/*
 		String s1 = "apple";
