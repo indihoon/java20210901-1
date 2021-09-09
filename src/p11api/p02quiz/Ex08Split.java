@@ -13,7 +13,11 @@ public class Ex08Split {
 		String dm = scanner.nextLine();
 		
 		// 코드 작성
+		String[] strings = input.split(dm);
 		
+		for (String item : strings) {
+			System.out.println(item);
+		}
 		
 		scanner.close();
 	}
