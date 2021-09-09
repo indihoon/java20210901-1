@@ -9,7 +9,7 @@ public class Ex06Replace {
 		System.out.print("입력:");
 		String str = scanner.nextLine();
 		
-		System.out.println(str.trim());
+		System.out.println(str.replace(" ", ""));
 		
 		scanner.close();
 	}
