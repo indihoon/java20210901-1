@@ -11,7 +11,7 @@ public class Ex08Substring {
 		System.out.println(sub1);
 		
 		String sub2 = s1.substring(0, 4); // 0번 인덱스부터 3번인덱스까지의 부분 문자열 리턴
-		                                  // 0번부터 4번까지, 4번은 포함안됨
+		                                  // 0번부터 4-1번까지
 		
 		System.out.println(sub2);
 		
