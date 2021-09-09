@@ -1,5 +1,6 @@
 package p11api.p02quiz;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ex08Split {
@@ -9,15 +10,16 @@ public class Ex08Split {
 		System.out.print("입력문자열:");
 		String input = scanner.nextLine();
 		
-		System.out.println("구분자:");
+		System.out.print("구분자:");
 		String dm = scanner.nextLine();
 		
 		// 코드 작성
 		String[] strings = input.split(dm);
 		
-		for (String item : strings) {
-			System.out.println(item);
-		}
+//		for (String item : strings) {
+//			System.out.println(item);
+//		}
+		System.out.println(Arrays.toString(strings));
 		
 		scanner.close();
 	}
