@@ -1,6 +1,18 @@
 package p99codingbat;
 
 public class Warmup1 {
+	public boolean mixStart(String str) {
+		  // return java.util.regex.Pattern.matches(".ix.*", str);
+		  
+		  if (str.length() >= 3) {
+		    String sub = str.substring(1, 3);
+		  
+		    return sub.equals("ix");  
+		  }
+		  
+		  return false;
+		  
+	}
 	public boolean startHi(String str) {
 		  return java.util.regex.Pattern.matches("hi.*", str);
 		  /*
