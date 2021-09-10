@@ -13,5 +13,12 @@ public class Ex01SingleCharacter {
 		System.out.println(Pattern.matches(p1, "c")); // false
 		System.out.println(Pattern.matches(p1, "aa")); // false
 		
+		System.out.println("==============================");
+		
+		String p2 = "b";
+		System.out.println(Pattern.matches(p2, "a")); // false
+		System.out.println(Pattern.matches(p2, "b")); // true
+		System.out.println(Pattern.matches(p2, "bb")); // false
+		System.out.println(Pattern.matches(p2, "B")); // false
 	}
 }
