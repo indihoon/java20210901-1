@@ -29,6 +29,15 @@ public class Ex10Quantifier {
 		System.out.println(Pattern.matches(p4, "aa"));
 		
 		System.out.println(Pattern.matches(p4, "ab"));
+		
+		System.out.println("===============================");
+		
+		String p5 = "[a-zA-Z]\\d*";
+		System.out.println(Pattern.matches(p5, "c"));
+		System.out.println(Pattern.matches(p5, "z0"));
+		System.out.println(Pattern.matches(p5, "k1"));
+		System.out.println(Pattern.matches(p5, "p12341414"));
+		System.out.println(Pattern.matches(p5, "pa2341414"));
 	}
 }
 
