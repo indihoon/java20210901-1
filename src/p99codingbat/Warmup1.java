@@ -1,6 +1,17 @@
 package p99codingbat;
 
 public class Warmup1 {
+	public boolean startHi(String str) {
+		  return java.util.regex.Pattern.matches("hi.*", str);
+		  /*
+		  if (str.length() >= 2) {
+		    String f = str.substring(0,2);
+		    return f.equals("hi");
+		  }
+		  
+		  return false;
+		  */
+	}
 
 	public String notString2(String str) {
 		if (str.startsWith("not")) {
