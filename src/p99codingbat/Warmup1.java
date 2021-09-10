@@ -1,6 +1,10 @@
 package p99codingbat;
 
 public class Warmup1 {
+	public boolean stringE(String str) {
+		  return java.util.regex.Pattern.matches("[^e]*e[^e]*e?[^e]*e?[^e]*", str);
+	}
+
 	public boolean mixStart(String str) {
 		  // return java.util.regex.Pattern.matches(".ix.*", str);
 		  
