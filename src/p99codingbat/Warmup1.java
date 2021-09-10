@@ -2,7 +2,17 @@ package p99codingbat;
 
 public class Warmup1 {
 	public boolean stringE(String str) {
-		  return java.util.regex.Pattern.matches("[^e]*e[^e]*e?[^e]*e?[^e]*", str);
+		  // return java.util.regex.Pattern.matches("[^e]*e[^e]*e?[^e]*e?[^e]*", str);
+
+		  int count = 0;
+		  
+		  for (int i = 0; i < str.length(); i++) {
+		    if (str.charAt(i) == 'e') {
+		      count++;
+		    }
+		  }
+		  
+		  return count >= 1 && count <= 3;
 	}
 
 	public boolean mixStart(String str) {
