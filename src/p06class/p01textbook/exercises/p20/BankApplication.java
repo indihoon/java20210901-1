@@ -64,9 +64,12 @@ public class BankApplication {
 		System.out.println("---------------");
 		
 		for (int i = 0; i < size; i++) {
+			System.out.println(accountArray[i]);
+			/*
 			System.out.print(accountArray[i].getAno() + "   ");
 			System.out.print(accountArray[i].getOwner() + "   ");
 			System.out.println(accountArray[i].getBalance());
+			*/
 		}
 	}
 
