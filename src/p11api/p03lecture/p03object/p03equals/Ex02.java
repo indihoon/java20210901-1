@@ -31,7 +31,7 @@ class Book {
 	
 	@Override
 	public int hashCode() {
-		return title.hashCode() + writer.hashCode();
+		return title.hashCode() * 31 + writer.hashCode() * 7;// field title과, field writer가 같으면 같은 hashcode 생성
 	}
 	
 	@Override
