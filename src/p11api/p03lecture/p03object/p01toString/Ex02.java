@@ -10,5 +10,8 @@ public class Ex02 {
 		
 		Account a2 = new Account("222-222", "lee", 20000);
 		System.out.println(a2.toString());
+		
+		a2.setBalance(30000);
+		System.out.println(a2.toString());
 	}
 }
