@@ -4,7 +4,7 @@ public class Ex10toString {
 	public static void main(String[] args) {
 		Car car1 = new Car("kia", 10000);
 		
-		System.out.println(car1.toSring());
+		System.out.println(car1.toString());
 		
 		Car car2 = new Car("tesla", 15000);
 		
