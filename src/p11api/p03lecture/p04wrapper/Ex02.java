@@ -38,6 +38,9 @@ public class Ex02 {
 		char c1 = 'c';
 		Character c2 = c1;
 		Character c3 = 'd';
+		
+//		Integer i6 = 300;
+//		System.out.println(i6 + 100);
 	}
 }
 
