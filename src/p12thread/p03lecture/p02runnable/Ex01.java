@@ -8,6 +8,9 @@ public class Ex01 {
 		
 		Thread t2 = new Thread(new NumberThread());
 		t2.start();
+		
+		Thread t3 = new Thread(new BeepThread());
+		t3.start();
 	}
 }
 
@@ -24,3 +27,16 @@ class NumberThread implements Runnable {
 		}
 	}
 }
+
+class BeepThread {
+	
+}
+
+
+
+
+
+
+
+
+
