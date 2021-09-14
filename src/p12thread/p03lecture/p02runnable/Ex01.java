@@ -1,5 +1,7 @@
 package p12thread.p03lecture.p02runnable;
 
+import java.awt.Toolkit;
+
 public class Ex01 {
 	public static void main(String[] args) {
 		Runnable r1 = new NumberThread();
@@ -28,8 +30,19 @@ class NumberThread implements Runnable {
 	}
 }
 
-class BeepThread {
-	
+class BeepThread implements Runnable {
+	@Override
+	public void run() {
+		Toolkit toolkit = Toolkit.getDefaultToolkit();
+		for (int i = 0; i < 5; i++) {
+			toolkit.beep();
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}		
+	}
 }
 
 
