@@ -3,6 +3,7 @@ package p12thread.p03lecture.p02runnable;
 import java.awt.Toolkit;
 
 public class Ex04 {
+	// skip!!!!! 안봐도됨!!!!
 	public static void main(String[] args) {
 		Thread t1 = new Thread(new Runnable() {
 
