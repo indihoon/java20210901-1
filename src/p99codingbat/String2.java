@@ -1,6 +1,13 @@
 package p99codingbat;
 
 public class String2 {
+	public boolean endOther(String a, String b) {
+		String al = a.toLowerCase();
+		String bl = b.toLowerCase();
+
+		return al.endsWith(bl) || bl.endsWith(al);
+	}
+
 	public int countCode(String str) {
 
 		int count = 0;
