@@ -25,6 +25,10 @@ public class Ex01 {
 				
 			case "r":
 				// 마지막 입력한 item이 삭제
+//				if (list.size() > 0) {
+				if (!list.isEmpty()) {
+					list.remove(list.size()-1);
+				}
 				break;
 				
 			default:
