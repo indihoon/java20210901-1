@@ -37,6 +37,8 @@ public class Ex02 {
 
 				System.out.println("합계:" + sum);
 				System.out.println("평균:" + avg);
+				System.out.println("최대값:" + max);
+				System.out.println("최소값:" + min);
 				break;
 
 			default:
