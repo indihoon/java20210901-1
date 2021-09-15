@@ -36,11 +36,12 @@ public class Ex02 {
 				double avg = sum / (double) list.size();
 				
 				int max = max(list);
-
+				int min = min(list);
+				
 				System.out.println("합계:" + sum);
 				System.out.println("평균:" + avg);
 				System.out.println("최대값:" + max);
-//				System.out.println("최소값:" + min);
+				System.out.println("최소값:" + min);
 				break;
 
 			default:
@@ -52,6 +53,21 @@ public class Ex02 {
 		}
 
 		scanner.close();
+	}
+
+	private static int min(ArrayList<Integer> list) {
+		if (list.isEmpty()) {
+			return 0;
+		}
+
+		int min = Integer.MAX_VALUE;
+		
+		for (int item : list) {
+			min = Math.min(min, item);
+		}
+		
+		return min;
+		
 	}
 
 	private static int max(ArrayList<Integer> list) {
