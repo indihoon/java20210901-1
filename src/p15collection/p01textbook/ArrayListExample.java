@@ -37,7 +37,8 @@ public class ArrayListExample {
 		list.remove(2);
 		System.out.println(list.get(2));
 		
-		list.remove("ibatis");
+//		list.remove("ibatis");
+		list.removeIf(str -> str.equals("ibatis"));
 		
 		for (int i = 0; i < list.size(); i++) {
 			String str = list.get(i);
