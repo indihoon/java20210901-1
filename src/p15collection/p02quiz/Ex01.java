@@ -10,7 +10,7 @@ public class Ex01 {
 		boolean run = true;
 		
 		while (run) {
-			System.out.print("l:list, e:exit 입력>");
+			System.out.print("l:list, e:exit, r:remove 입력>");
 			String str = scanner.nextLine();
 			
 			switch (str) {
@@ -21,6 +21,10 @@ public class Ex01 {
 				break;
 			case "e":
 				run = false;
+				break;
+				
+			case "r":
+				// 마지막 입력한 item이 삭제
 				break;
 				
 			default:
