@@ -14,6 +14,8 @@ public class ArrayListExample {
 		list.add("servlet/jsp");
 		list.add(2, "database");
 		list.add("ibatis");
+		list.add("ibatis");
+		list.add("ibatis");
 		
 		list.forEach(str -> System.out.println(str));
 		
