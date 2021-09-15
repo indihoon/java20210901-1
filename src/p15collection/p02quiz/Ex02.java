@@ -22,6 +22,11 @@ public class Ex02 {
 					System.out.println(list.get(i));
 				}
 				break;
+			case 2:
+				if (list.size() > 0) {
+					list.remove(list.size()-1);
+				}
+				break;
 
 			default:
 				if (input >= 50) {
