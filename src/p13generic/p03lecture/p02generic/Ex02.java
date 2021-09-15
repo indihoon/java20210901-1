@@ -1,5 +1,8 @@
 package p13generic.p03lecture.p02generic;
 
+import java.util.List;
+import java.util.Map;
+
 public class Ex02 {
 	public static void main(String[] args) {
 		Container<String, Integer> c1;
@@ -14,7 +17,8 @@ public class Ex02 {
 		System.out.println(s1);
 		System.out.println(i1);
 		
-		Container<Double, int[]> c2 = new Container<Double, int[]>();
+//		Container<Double, int[]> c2 = new Container<Double, int[]>();
+		Container<Double, int[]> c2 = new Container<>();
 		c2.setItem1(3.14);
 		c2.setItem2(new int[] {1, 2, 3});
 		
@@ -24,6 +28,8 @@ public class Ex02 {
 		System.out.println(d1);
 		System.out.println(arr1);
 		
+		Container<List<List<String>>, Map<String, Integer>> c3 = new Container<>();
+		Container<? extends Number, Object> c4 = new Container<Integer, Object>();
 		
 	}
 }
