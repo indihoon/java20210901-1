@@ -12,6 +12,7 @@ public class Ex03 {
 		
 		System.out.println(list.size());
 		
+		// 그냥 for
 		for (int i = 0; i < list.size(); i++) {
 			System.out.println(list.get(i));
 		}
@@ -21,12 +22,15 @@ public class Ex03 {
 		
 		System.out.println(list.size());
 		
+		// 향상된 for
 		for (String str : list) {
 			System.out.println(str);
 		}
 		
+		// forEach(lambda)
 		list.forEach(str -> System.out.println(str));
 		
+		// toString
 		System.out.println(list);
 	}
 }
