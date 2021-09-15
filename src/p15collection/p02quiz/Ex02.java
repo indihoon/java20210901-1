@@ -30,7 +30,7 @@ public class Ex02 {
 			case 3:
 				int sum = 0;
 				for (Integer item : list) {
-					sum = sum + item;
+					sum = sum + item;// int <---> Integer
 				}
 
 				double avg = sum / (double) list.size();
