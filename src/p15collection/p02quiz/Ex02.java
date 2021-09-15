@@ -8,11 +8,11 @@ public class Ex02 {
 		ArrayList<Integer> list = new ArrayList<>();
 		Scanner scanner = new Scanner(System.in);
 		boolean run = true;
-		
+
 		while (run) {
 			System.out.print("0:종료,1:출력,2:삭제,3:통계 점수(50이상)>");
 			int input = scanner.nextInt();
-			
+
 			switch (input) {
 			case 0:
 				run = false;
@@ -24,8 +24,19 @@ public class Ex02 {
 				break;
 			case 2:
 				if (list.size() > 0) {
-					list.remove(list.size()-1);
+					list.remove(list.size() - 1);
 				}
+				break;
+			case 3:
+				int sum = 0;
+				for (Integer item : list) {
+					sum = sum + item;
+				}
+
+				double avg = sum / (double) list.size();
+
+				System.out.println("합계:" + sum);
+				System.out.println("평균:" + avg);
 				break;
 
 			default:
@@ -35,12 +46,7 @@ public class Ex02 {
 				break;
 			}
 		}
-		
+
 		scanner.close();
 	}
 }
-
-
-
-
-
