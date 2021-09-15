@@ -10,7 +10,7 @@ public class Ex02 {
 		boolean run = true;
 		
 		while (run) {
-			System.out.print("0:종료,1:출력,2:삭제 점수(50이상)>");
+			System.out.print("0:종료,1:출력,2:삭제,3:통계 점수(50이상)>");
 			int input = scanner.nextInt();
 			
 			switch (input) {
