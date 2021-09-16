@@ -20,4 +20,27 @@ public class Ex05 {
 		
 		return scanner.nextInt() + scanner.nextInt();
 	}
+	
+	public int sum3(String str) {
+		int s = str.indexOf(" ");
+		
+		int num1 = Integer.parseInt(str.substring(0, s));
+		int num2 = Integer.parseInt(str.substring(s+1));
+		
+		return num1 + num2;
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

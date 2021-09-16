@@ -18,6 +18,10 @@ class Ex05Test {
 		assertEquals(43, e.sum2("10 33"));
 		assertEquals(0, e.sum2("-5 5"));
 		
+		assertEquals(7, e.sum3("3 4"));
+		assertEquals(43, e.sum3("10 33"));
+		assertEquals(0, e.sum3("-5 5"));
+		
 	}
 
 }
