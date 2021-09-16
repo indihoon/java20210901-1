@@ -9,7 +9,10 @@ public class Ex13 {
 		ArrayList<Integer> lotto = new ArrayList<>();
 		
 		// 코드작성
-		
+		for (int i = 0; i < 6; i++) {
+			int ran = (int) (Math.random() * 45) + 1;
+			lotto.add(ran);
+		}
 		
 		
 		for (int l : lotto) {
