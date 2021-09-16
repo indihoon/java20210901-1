@@ -13,6 +13,7 @@ class Ex10Test {
 	@Test
 	void test() {
 		Ex10 e = new Ex10();
+		// list의 짝수 아이템들만 모은 새 ArrayList를 만들어서 리턴
 		
 		List<Integer> list1 = new ArrayList<>(Arrays.asList(8, 9, 10, 10, 9, 8));
 		ArrayList<Integer> r1 = e.evenList(list1);
