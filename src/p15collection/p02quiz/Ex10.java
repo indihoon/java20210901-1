@@ -8,6 +8,8 @@ public class Ex10 {
 		
 		// list의 짝수 아이템들만 모은 새 ArrayList를 만들어서 리턴
 		
+		// 8, 9, 10, 10, 9, 8
+		
 		ArrayList<Integer> result = new ArrayList<>();
 		
 		for (int item : list) {

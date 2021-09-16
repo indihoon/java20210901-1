@@ -18,6 +18,10 @@ class Ex10Test {
 		List<Integer> list1 = new ArrayList<>(Arrays.asList(8, 9, 10, 10, 9, 8));
 		ArrayList<Integer> r1 = e.evenList(list1);
 		assertEquals(4, r1.size());
+		assertEquals(8, r1.get(0));
+		assertEquals(10, r1.get(1));
+		assertEquals(10, r1.get(2));
+		assertEquals(8, r1.get(3));
 		assertEquals(6, list1.size());
 		
 		List<Integer> list2 = new ArrayList<>(Arrays.asList(-1, -2, -3, -100, -200, -1));
