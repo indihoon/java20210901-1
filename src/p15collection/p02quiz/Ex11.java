@@ -10,7 +10,7 @@ public class Ex11 {
 		ArrayList<Integer> result = new ArrayList<>();
 		
 		int min = list.get(0);
-		int max = list.get(1);
+		int max = list.get(0);
 		
 		for (int item : list) {
 			min = Math.min(min, item);
