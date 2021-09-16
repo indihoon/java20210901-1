@@ -9,14 +9,20 @@ public class Ex13 {
 		ArrayList<Integer> lotto = new ArrayList<>();
 		
 		// 코드작성
-		for (int i = 0; i < 6; i++) {
+		while (lotto.size() < 6) {
 			int ran = (int) (Math.random() * 45) + 1;
-			lotto.add(ran);
+			
+			System.out.println(ran);
+			
+			if (!lotto.contains(ran)) {
+				lotto.add(ran);
+			}
 		}
 		
+		System.out.println("===========================");
 		
 		for (int l : lotto) {
-			System.out.println(l); // 6개 랜덤(중복 허용)
+			System.out.println(l); // 6개 랜덤(중복 허용xxxx)
 		}
 	}
 }
