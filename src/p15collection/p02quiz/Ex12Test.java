@@ -17,6 +17,7 @@ class Ex12Test {
 		assertEquals(true, e.mirror(Arrays.asList(5, 4, 2, 2, 4, 5)));
 		assertEquals(false, e.mirror(Arrays.asList(1, 2, 3, 1, 2, 3)));
 		
+		
 	}
 
 }
