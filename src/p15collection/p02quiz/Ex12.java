@@ -1,5 +1,6 @@
 package p15collection.p02quiz;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Ex12 {

@@ -1,6 +1,8 @@
 package p15collection.p02quiz;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.Arrays;
 
@@ -23,6 +25,9 @@ class Ex12Test {
 		
 		assertEquals(true, e.mirror2(Arrays.asList("book", "java", "html", "java", "book")));
 		assertEquals(false, e.mirror2(Arrays.asList("spring", "servlet", "jsp")));
+		
+		assertTrue(e.mirror2(Arrays.asList(3, 4, 3)));
+		assertFalse(e.mirror2(Arrays.asList(1, 2, 3)));
 	}
 
 }
