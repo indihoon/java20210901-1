@@ -26,4 +26,35 @@ public class Ex12 {
 		
 		return true;
 	}
+	
+	public <T> boolean mirror2(List<T> list) {
+		int left = 0;
+		int right = list.size() - 1;
+		
+		while (left < right) {
+			T leftValue = list.get(left);
+			T rightValue = list.get(right);
+			
+			if (leftValue.equals(rightValue)) {
+				left++;
+				right--;
+			} else {
+				return false;
+			}
+		}
+		
+		return true;
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+

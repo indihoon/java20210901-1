@@ -17,7 +17,23 @@ class Ex12Test {
 		assertEquals(true, e.mirror(Arrays.asList(5, 4, 2, 2, 4, 5)));
 		assertEquals(false, e.mirror(Arrays.asList(1, 2, 3, 1, 2, 3)));
 		
+		assertEquals(true, e.mirror2(Arrays.asList(1, 2, 3, 4, 3, 2, 1)));
+		assertEquals(true, e.mirror2(Arrays.asList(5, 4, 2, 2, 4, 5)));
+		assertEquals(false, e.mirror2(Arrays.asList(1, 2, 3, 1, 2, 3)));
 		
+		assertEquals(true, e.mirror2(Arrays.asList("book", "java", "html", "java", "book")));
+		assertEquals(false, e.mirror2(Arrays.asList("spring", "servlet", "jsp")));
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
