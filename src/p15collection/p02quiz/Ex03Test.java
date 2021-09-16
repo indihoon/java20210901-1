@@ -17,6 +17,8 @@ class Ex03Test {
 		assertEquals(0, e.triple(0));
 		assertEquals(3, e.triple(1));
 		assertEquals(6, e.triple(2));
+		
+		
 	}
 
 }
