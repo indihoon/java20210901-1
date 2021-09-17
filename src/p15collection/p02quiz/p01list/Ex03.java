@@ -1,4 +1,4 @@
-package p15collection.p02quiz;
+package p15collection.p02quiz.p01list;
 
 public class Ex03 {
 	public int triple(int num) {
