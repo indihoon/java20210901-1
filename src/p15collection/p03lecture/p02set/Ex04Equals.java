@@ -17,10 +17,16 @@ public class Ex04Equals {
 		System.out.println("======================");
 		
 		Set<Car> set2 = new HashSet<>();
+		
 		set2.add(new Car("sonata", 888));
 		set2.add(new Car("avante", 999));
 		set2.add(new Car("volvo", 777));
 		set2.add(new Car("volvo", 777));
+		
+		System.out.println(new Car("sonata", 888).hashCode());
+		System.out.println(new Car("avante", 999).hashCode());
+		System.out.println(new Car("volvo", 777).hashCode());
+		System.out.println(new Car("volvo", 777).hashCode());
 		
 		System.out.println(set2.size());
 		
