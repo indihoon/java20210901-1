@@ -21,7 +21,12 @@ class Ex08Test {
 		assertFalse(set1.contains(3));
 		assertFalse(set1.contains(4));
 		
-		
+		Set<Integer> set2 = e.diff2(new int[] {1, 2, 3}, new int[] {2, 3, 4});
+		assertEquals(1, set2.size());
+		assertTrue(set2.contains(1));
+		assertFalse(set2.contains(2));
+		assertFalse(set2.contains(3));
+		assertFalse(set2.contains(4));
 	}
 
 }
