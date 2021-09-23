@@ -28,6 +28,17 @@ class Ex05Test {
 		assertEquals(10, map1.get(2));
 		assertEquals(2, map1.get(100));
 		
+		Map<Integer, Integer> map3 = e.doubling2(map1);
+		
+		assertEquals(3, map3.size());
+		assertEquals(6, map3.get(1));
+		assertEquals(20, map3.get(2));
+		assertEquals(4, map3.get(100));
+		
+		assertEquals(3, map1.get(1));
+		assertEquals(10, map1.get(2));
+		assertEquals(2, map1.get(100));
+		
 	}
 
 }

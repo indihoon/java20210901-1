@@ -10,6 +10,7 @@ public class Ex05 {
 		// param이 변경되면 안됨
 		Map<Integer, Integer> map = new HashMap();
 		
+		// key Set으로 탐색
 		Set<Integer> keys = param.keySet();
 		for (Integer key : keys) {
 			Integer val = param.get(key);
@@ -19,5 +20,36 @@ public class Ex05 {
 		
 		return map;
 	}
+	
+	public Map<Integer, Integer> doubling2(Map<Integer, Integer> param) {
+		Map<Integer, Integer> map = new HashMap<>();
+		
+		// entry Set으로 탐색
+		Set<Map.Entry<Integer, Integer>> entries = param.entrySet();
+		for (Map.Entry<Integer, Integer> entry : entries) {
+			Integer key = entry.getKey();
+			Integer val = entry.getValue();
+			
+			map.put(key, val * 2);
+		}
+		
+		return map;
+	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
