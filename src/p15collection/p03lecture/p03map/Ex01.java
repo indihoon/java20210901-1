@@ -51,6 +51,13 @@ public class Ex01 {
 		for (Map.Entry<Integer, Integer> entry : entrys) {
 			System.out.println(entry.getKey() + ":" + entry.getValue());
 		}
+	
+		// containsKey : key가 있는지 확인
+		System.out.println("===키 확인====");
+		boolean c1 = map.containsKey(100);
+		System.out.println(c1);
+		System.out.println(map.containsKey(500));
+		System.out.println(map.containsKey(700));
 	}
 }
 
