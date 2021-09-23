@@ -1,5 +1,6 @@
 package p15collection.p02quiz.p03map;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class Ex03 {
@@ -9,8 +10,13 @@ public class Ex03 {
 		// 키 : 1~5
 		// 밸류 : 키 * 3
 		
+		Map<Integer, Integer> map = new HashMap<>();
 		
-		return null;
+		for (int i = 1; i <= 5; i++) {
+			map.put(i, i*3);
+		}
+		
+		return map;
 	}
 }
 
