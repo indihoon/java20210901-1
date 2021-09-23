@@ -20,7 +20,7 @@ class Ex09Test {
 		assertEquals(2, map.get('e'));
 		assertEquals(2, map.get('s'));
 		assertEquals(1, map.get('k'));
-		assertEquals(null, s);
+		assertEquals(null, map.get('z'));
 		
 	}
 
