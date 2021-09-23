@@ -24,9 +24,9 @@ class Ex05Test {
 		assertEquals(20, map2.get(2));
 		assertEquals(4, map2.get(100));
 		
-		assertEquals(3, map2.get(1));
-		assertEquals(10, map2.get(2));
-		assertEquals(2, map2.get(100));
+		assertEquals(3, map1.get(1));
+		assertEquals(10, map1.get(2));
+		assertEquals(2, map1.get(100));
 		
 	}
 
