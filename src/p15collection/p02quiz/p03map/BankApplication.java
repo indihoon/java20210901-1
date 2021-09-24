@@ -52,8 +52,8 @@ public class BankApplication {
 		System.out.print("초기입금액:");
 		int balance = scanner.nextInt();
 		
-		Account account = new Account(ano, owner, balance);
-		accountMap[size] = account;
+		Account account = new Account(owner, balance);
+		accountMap.put(ano, account);
 		size++;
 		
 		System.out.println("결과: 계좌가 생성되었습니다.");
@@ -65,13 +65,10 @@ public class BankApplication {
 		System.out.println("계좌목록");
 		System.out.println("---------------");
 		
-		for (int i = 0; i < size; i++) {
-			System.out.println(accountMap[i]);
-			/*
-			System.out.print(accountArray[i].getAno() + "   ");
-			System.out.print(accountArray[i].getOwner() + "   ");
-			System.out.println(accountArray[i].getBalance());
-			*/
+		for (Map.Entry<String, Account> entry : accountMap.entrySet()) {
+			System.out.print(entry.getKey() + "   ");
+			System.out.print(entry.getValue().getOwner() + "   ");
+			System.out.println(entry.getValue().getBalance());
 		}
 	}
 
@@ -119,10 +116,8 @@ public class BankApplication {
 	}
 	
 	private static Account findAccount(String ano) {
-		for (int i = 0; i < size; i++) {
-			if (accountMap[i].getAno().equals(ano)) {
-				return accountMap[i];
-			}
+		if (accountMap.containsKey(ano)) {
+			return accountMap.get(ano);
 		}
 		
 		System.out.println("계좌번호가 존재하지 않습니다.");
