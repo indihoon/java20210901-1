@@ -14,6 +14,7 @@ public class MapExample {
 		int maxScore = 0;
 		int totalScore = 0;
 		
-		// 작성 위치
+		// 평균, 최고점수, 최고점수받은 아이디
+		// 작성 위치 
 	}
 }
