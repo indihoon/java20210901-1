@@ -29,6 +29,12 @@ class Ex12LeetCode1Test {
 		Arrays.sort(ret3);
 		assertEquals(0, ret3[0]);
 		assertEquals(1, ret3[1]);
+		
+		int[] ret4 = e.twoSum(new int[] { 3, 2, 3 }, 6);
+		assertEquals(2, ret4.length);
+		Arrays.sort(ret4);
+		assertEquals(0, ret4[0]);
+		assertEquals(2, ret4[1]);
 	}
 
 }
