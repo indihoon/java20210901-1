@@ -16,5 +16,32 @@ public class MapExample {
 		
 		// 평균, 최고점수, 최고점수받은 아이디
 		// 작성 위치 
+		
+		for (Map.Entry<String, Integer> entry : map.entrySet()) {
+			if (maxScore < entry.getValue()) {
+				maxScore = entry.getValue();
+				name = entry.getKey();
+			}
+			
+			totalScore += entry.getValue();
+		}
+		
+		System.out.println("평균:" + (totalScore / map.size()));
+		System.out.println("최고점수:" + maxScore);
+		System.out.println("최고점수를 받은 아이디:" + name);
+		
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
