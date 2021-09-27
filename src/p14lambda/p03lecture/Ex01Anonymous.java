@@ -9,13 +9,9 @@ public class Ex01Anonymous {
 		MyInterface1 o2 = new MyInterface1() {
 			@Override
 			public void method1() {
-				// TODO Auto-generated method stub
-				
 			}
 			@Override
 			public void method2() {
-				// TODO Auto-generated method stub
-				
 			}
 			
 			
@@ -34,12 +30,8 @@ class MyClass1 implements MyInterface1 {
 	// 추상 메소드 재정의
 	@Override
 	public void method1() {
-		// TODO Auto-generated method stub
-		
 	}
 	@Override
 	public void method2() {
-		// TODO Auto-generated method stub
-		
 	}
 }
