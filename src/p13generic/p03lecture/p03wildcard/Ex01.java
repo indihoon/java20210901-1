@@ -14,6 +14,8 @@ public class Ex01 {
 		
 		list1 = list2; // 이게 된다면.....
 		list1.add(new Double(3.14)); // 이게 되어야함!
+		// list1이 가리키고 있는 instance는 list2와 같음
+		// list2는 Double 타입의 item을 가질 수 없음
 		
 		// 결론 : ArrayList<Number>는 ArrayList<Integer>의 상위 타입이 아니다.
 		
