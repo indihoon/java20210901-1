@@ -11,6 +11,7 @@ class MyType<T> {
 	public void method(T param) {
 		
 	}
+	
 }
 
 class ChildType<T> extends MyType<T> {
@@ -18,7 +19,9 @@ class ChildType<T> extends MyType<T> {
 }
 
 class Child2Type<T, U> extends MyType<T> {
-	
+	public void method1(U param) {
+		
+	}
 }
 
 class Child3Type extends MyType<String> {
