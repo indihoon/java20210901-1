@@ -30,6 +30,6 @@ class MyComparator implements Comparator<Number> {
 		// 같으면 0;
 		
 		
-		return (int) (o1.doubleValue() - o2.doubleValue());
+		return - (int) (o1.doubleValue() - o2.doubleValue());
 	}
 }
