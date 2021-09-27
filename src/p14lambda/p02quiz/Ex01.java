@@ -5,9 +5,15 @@ public class Ex01 {
 		MyInterface1 o1;
 		
 		// 코드 작성
-		
+		o1 = () -> {
+			for (int i = 1; i <= 5; i++) {
+				System.out.println(i);
+			}
+		};
 		
 		o1.method();
+		// 실행 결과
+		// 1 ~ 5까지 출력
 	}
 }
 
