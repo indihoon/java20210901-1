@@ -9,7 +9,7 @@ public class Ex05 {
 		
 		// list.forEach 활용, lambda
 		
-		// 출력 결과
+		// 출력 결과 (한 줄에)
 		// 6 8 10 12 
 	}
 }
