@@ -19,6 +19,9 @@ public class Ex10 {
 
 		// 삼항연산식 활용
 		list.replaceAll(s -> s.length() <= 2 ? s : s.substring(s.length() - 2));
+		
+		// regex 활용
+		list.replaceAll(s -> s.replaceAll(".*(?=.{2}$)", ""));
 
 		System.out.println(list); // [va, ng, ml, a, , ss]
 	}
