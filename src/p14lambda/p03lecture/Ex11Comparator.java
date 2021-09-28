@@ -14,5 +14,24 @@ public class Ex11Comparator {
 		
 		list.sort((a, b) -> b - a);
 		System.out.println(list);
+		
+		list.sort((a, b) -> a.compareTo(b));
+		System.out.println(list);
+		
+		List<String> arr = Arrays.asList("java", "apple", "spring", "jsp");
+		
+		arr.sort((a, b) -> a.compareTo(b));
+		System.out.println(arr);
+		
+		arr.sort((o1, o2) -> o2.compareTo(o1));
+		System.out.println(arr);
 	}
 }
+
+
+
+
+
+
+
+
