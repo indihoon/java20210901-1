@@ -8,7 +8,7 @@ public class Ex12 {
 		List<Car> list = Arrays.asList(new Car("tesla", 500), new Car("kia", 300), new Car("volvo", 200), new Car("fiat", 400));
 		
 		//list.sort
-		// 가격 순으로 정렬
+		// 가격 순으로 정렬[volvo, kia, fiat, tesla]
 		
 		
 	}
