@@ -1,6 +1,7 @@
 package p14lambda.p03lecture;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class Ex11Comparator {
@@ -24,6 +25,12 @@ public class Ex11Comparator {
 		System.out.println(arr);
 		
 		arr.sort((o1, o2) -> o2.compareTo(o1));
+		System.out.println(arr);
+		
+		arr.sort(Comparator.naturalOrder());
+		System.out.println(arr);
+		
+		arr.sort(Comparator.reverseOrder());
 		System.out.println(arr);
 	}
 }
