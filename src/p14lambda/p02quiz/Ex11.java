@@ -10,6 +10,7 @@ public class Ex11 {
 		System.out.println(list);
 		
 		// list.sort
+		list.sort((s1, s2) -> s1.length() - s2.length());
 		
 		
 		System.out.println(list); // [a, qa, bob, java, mouse, spring]
