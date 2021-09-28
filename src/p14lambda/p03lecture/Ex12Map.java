@@ -45,6 +45,7 @@ public class Ex12Map {
 				return u == null ? t * 10 : u * 10;
 			}
 		});
+		map.forEach((k, v) -> System.out.println(k + ":" + v));
 	}
 }
 
