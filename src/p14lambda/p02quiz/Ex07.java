@@ -11,7 +11,7 @@ public class Ex07 {
 		
 		// ArrayList.removeIf
 		// 코드 작성
-		
+		arr1.removeIf(e -> e % 2 == 0);
 		
 		
 		
