@@ -9,7 +9,9 @@ public class Ex12 {
 		
 		//list.sort
 		// 가격 순으로 정렬[volvo, kia, fiat, tesla]
+		list.sort((c1, c2) -> c1.getPrice() - c2.getPrice());
 		
+		list.forEach(c -> System.out.println(c.getModel() + ":" + c.getPrice()));
 		
 	}
 }
