@@ -9,7 +9,7 @@ public class Ex08 {
 		List<String> list = new ArrayList<>(Arrays.asList("apple", "java", "abc", "amond", "spring"));
 		
 		// List removeIf 활용
-		
+		list.removeIf(e -> !e.startsWith("a"));
 		
 		
 		System.out.println(list); // [apple, abc, amond]
