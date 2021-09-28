@@ -27,13 +27,13 @@ public class Ex07 {
 			return item % 2 == 0;
 		});
 		
-		// lambda
+		// lambda : 하나의 명령문 {}중괄호 생략, return 생략
 		arr1.removeIf((Integer item) -> item % 2 == 0);
 		
-		// lambda
+		// lambda : 파라미터 type 생략
 		arr1.removeIf((e) -> e % 2 == 0);
 		
-		// lambda
+		// lambda : 파라미터 ()소괄호 생략 
 		arr1.removeIf(e -> e % 2 == 0);
 		
 		
