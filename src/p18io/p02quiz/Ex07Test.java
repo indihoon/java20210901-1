@@ -22,10 +22,10 @@ class Ex07Test {
 		
 		Map<Character, Integer> map2 = e.count("C:\\Users\\user\\Desktop\\iotest\\test2.txt");
 		
-		assertEquals(3 ,map1.size());
-		assertEquals(11, map1.get('j'));
-		assertEquals(11, map1.get('v'));
-		assertEquals(22, map1.get('a'));
+		assertEquals(3 ,map2.size());
+		assertEquals(11, map2.get('j'));
+		assertEquals(11, map2.get('v'));
+		assertEquals(22, map2.get('a'));
 		
 	}
 
