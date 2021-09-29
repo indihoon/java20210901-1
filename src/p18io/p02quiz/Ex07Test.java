@@ -20,7 +20,7 @@ class Ex07Test {
 		assertEquals(1, map1.get('b'));
 		assertEquals(null, map1.get('c'));
 		
-		Map<Character, Integer> map2 = e.count("C:\\Users\\user\\Desktop\\iotest\\test3.txt");
+		Map<Character, Integer> map2 = e.count("C:\\Users\\user\\Desktop\\iotest\\test2.txt");
 		
 		assertEquals(3 ,map1.size());
 		assertEquals(11, map1.get('j'));
