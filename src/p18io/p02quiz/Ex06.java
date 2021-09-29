@@ -8,7 +8,11 @@ public class Ex06 {
 		String fileName = "C:\\Users\\user\\Desktop\\iotest\\test3.txt";
 		Reader r = new FileReader(fileName);
 		
+		int data = 0;
 		
+		while ((data = r.read()) != -1) {
+			System.out.println((char) data);
+		}
 		
 		r.close();
 	}
