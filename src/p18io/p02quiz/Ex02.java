@@ -13,6 +13,9 @@ public class Ex02 {
 		int fileSize = 0;
 		
 //		while () // InputStream.read(byte[]) 를 활용해서 file 크기 계산
+		while ((cnt = is.read(data)) != -1) {
+			fileSize += cnt;
+		}
 		
 		System.out.println("파일크기:" + fileSize + "bytes"); // 파일크기:6778bytes
 		System.out.println("프로그램 종료");
