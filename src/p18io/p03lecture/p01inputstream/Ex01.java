@@ -11,7 +11,7 @@ public class Ex01 {
 		File file = new File(fileName);
 		System.out.println(file.exists());
 		
-		String fileName2 = "C:\\Users\\user\\Desktop\\test1.txt";
+		String fileName2 = "C:\\Users\\user\\Desktop\\iotest\\test1.txt";
 		File file2 = new File(fileName2);
 		System.out.println(file2.exists());
 		
