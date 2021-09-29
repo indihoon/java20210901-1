@@ -28,8 +28,8 @@ public class Ex05HandleException {
 	}
 
 	public static void method() {
-		// try-with-resource
-
+		// try-with-resource 
+		// 책 438쪽
 		String name = "없는파일";
 
 		try (InputStream is = new FileInputStream(name);) {
