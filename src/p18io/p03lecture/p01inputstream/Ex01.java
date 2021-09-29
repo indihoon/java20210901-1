@@ -2,7 +2,6 @@ package p18io.p03lecture.p01inputstream;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.InputStream;
 
 public class Ex01 {
