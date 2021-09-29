@@ -11,7 +11,7 @@ public class Ex02 {
 		int input = 0;
 		
 		while ((input = is.read()) != -1) {
-			
+			System.out.println(input);
 		}
 		
 		System.out.println("프로그램 종료");
