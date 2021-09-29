@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 class Ex07Test {
 
 	@Test
-	void test() {
+	void test() throws Exception {
 		Ex07 e = new Ex07();
 		Map<Character, Integer> map1 = e.count("C:\\Users\\user\\Desktop\\iotest\\test3.txt");
 		
