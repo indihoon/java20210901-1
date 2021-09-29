@@ -15,7 +15,7 @@ public class Ex04 {
 		
 		int data = 0;
 		while ((data = is.read()) != -1) {
-			os.write(data); // 6778번
+			os.write(data); // 파일 크기 만큼 반복
 		}
 		
 		System.out.println("프로그램 종료");
