@@ -9,7 +9,10 @@ public class Ex01 {
 		InputStream is = new FileInputStream(file);
 		int size = 0;
 		
-//		while () // InputStream.read() 를 사용해서 loop가 몇 번 실행되었는지 size에 저장 
+//		while () // InputStream.read() 를 사용해서 loop가 몇 번 실행되었는지 size에 저장
+		while (is.read() != -1) {
+			size++;
+		}
 		
 		
 		System.out.println("파일크기:" + size); // 파일크기:6778
