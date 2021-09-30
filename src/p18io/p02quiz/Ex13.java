@@ -30,10 +30,10 @@ public class Ex13 {
 		}
 		
 		br.close();
-		fr.close();
+//		fr.close();
 		
 		bw.close();
-		fw.close();
+//		fw.close();
 	}
 }
 
