@@ -10,7 +10,14 @@ public class Ex03BufferedReader {
 		Reader reader = new FileReader(name);
 		BufferedReader br = new BufferedReader(reader);
 		
+		String line = br.readLine();
+		System.out.println(line);
+		System.out.println(br.readLine());
+		System.out.println(br.readLine());
 		
+		while ((line = br.readLine()) != null) {
+			System.out.println(line);
+		}
 		br.close();
 		reader.close();
 		System.out.println("종료");
