@@ -9,7 +9,15 @@ public class Ex09 {
 		Writer wr = new FileWriter(file);
 		
 		// ABCDE~Z
+//		for (char c = 'A'; c <= 'Z'; c++) {
+//			wr.write(c);
+//		}
 		
+		for (int i = 0; i < 26; i++) {
+			wr.write(65 + i);
+		}
+		
+		System.out.println("프로그램 종료");
 		wr.close();
 	}
 }
