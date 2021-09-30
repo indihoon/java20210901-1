@@ -1,7 +1,6 @@
 package p18io.p02quiz;
 
 import java.io.FileWriter;
-import java.io.IOException;
 import java.io.Writer;
 import java.util.Scanner;
 
@@ -36,6 +35,7 @@ public class Ex11 {
 			
 			writer.write(input);
 			writer.write("\n");
+			writer.flush();
 		}
 		
 		System.out.println("프로그램 종료");
