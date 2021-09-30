@@ -12,16 +12,11 @@ public class Ex01BufferedWriter {
 		String name = "C:\\Users\\user\\Desktop\\iotest\\outtestE.txt";
 		Writer writer = new FileWriter(name);
 		BufferedWriter bw = new BufferedWriter(writer);
-		char[] datas = new char[1024];
-		
-		for (int i = 0; i < datas.length; i++) {
-			datas[i] = (char) (((int) (Math.random() * 26)) + 'a');
-		}
 		
 		long start = System.currentTimeMillis();
-		for (int i = 0; i < 1024 * 1024 * 5; i++) {
-//			writer.write(datas);
-			bw.write(datas);
+		for (int i = 0; i < 1024 * 1024 * 1024; i++) {
+//			writer.write('a'); // Writer // 26627 ms, 26539 ms
+			bw.write('a'); // BufferedWriter // 11509 ms, 18532 ms
 		}
 		long end = System.currentTimeMillis();
 		
