@@ -11,7 +11,7 @@ public class Ex11MultiFilter {
 		// inputStream to Reader
 		// Reader를 BufferedReader로 감싸서 (BufferedReader의 변수 br)
 		
-		// 읽어서 출력
+		// 한 줄씩 읽어서 출력
 		while ((line = br.readLine()) != null) {
 			System.out.println(line);
 		}
