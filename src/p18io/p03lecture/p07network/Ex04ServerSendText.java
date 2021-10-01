@@ -33,6 +33,7 @@ public class Ex04ServerSendText {
 			
 			bw.write(input);
 			bw.newLine();
+			bw.flush();
 		}
 		
 		bw.close();
