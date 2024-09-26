@@ -1,6 +1,26 @@
 package p99codingbat;
 
 public class String2 {
+	public boolean endOther(String a, String b) {
+		String al = a.toLowerCase();
+		String bl = b.toLowerCase();
+
+		return al.endsWith(bl) || bl.endsWith(al);
+	}
+
+	public int countCode(String str) {
+
+		int count = 0;
+		for (int i = 0; i < str.length() - 3; i++) {
+			String sub = str.substring(i, i + 4);
+			if (java.util.regex.Pattern.matches("co.e", sub)) {
+				count++;
+			}
+		}
+		return count;
+
+	}
+
 	public boolean bobThere(String str) {
 		/*
 		 * return java.util.regex.Pattern.matches(".*b.b.*", str);

@@ -1,22 +1,12 @@
-package p06class.p01textbook.exercises.p20;
+package p15collection.p02quiz.p03map;
 
 public class Account {
-	private String ano;// 계좌번호
 	private String owner;// 계좌주
 	private int balance;// 잔액
 	
-	public Account(String ano, String owner, int balance) {
-		this.ano = ano;
+	public Account(String owner, int balance) {
 		this.owner = owner;
 		this.balance = balance;
-	}
-
-	public String getAno() {
-		return ano;
-	}
-
-	public void setAno(String ano) {
-		this.ano = ano;
 	}
 
 	public String getOwner() {
@@ -33,11 +23,6 @@ public class Account {
 
 	public void setBalance(int balance) {
 		this.balance = balance;
-	}
-
-	@Override
-	public String toString() {
-		return ano + "   " + owner + "   " + balance;
 	}
 }
 
